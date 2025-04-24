@@ -1,4 +1,4 @@
-import MainNav from "@/components/organisms/Header/MainNav"
+import MainNav from "@/components/organisms/MainNav/MainNav"
 
 export default function Home() {
   return <MainNav />
