@@ -7,4 +7,5 @@ export const StyledAppBar = styled(AppBar)<AppBarProps>(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   background: theme.palette.primary.main,
+  boxShadow: "none",
 }))

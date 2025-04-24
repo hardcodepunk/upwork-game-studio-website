@@ -5,5 +5,5 @@ export const StyledLogo = styled("div")(({ theme }: { theme: Theme }) => ({
   fontFamily: "var(--font-protest), Arial, sans-serif",
   fontSize: "24px",
   fontWeight: "800",
-  color: theme.palette.primary.main,
+  textTransform: "uppercase",
 }))
