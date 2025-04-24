@@ -19,23 +19,6 @@ export const TextBlock = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   gap: theme.spacing(2),
-  "& h1": {
-    fontSize: "64px",
-    lineHeight: 1,
-    fontWeight: 800,
-    fontFamily: '"Protest Guerrilla", Arial, sans-serif',
-  },
-  "& h2": {
-    fontSize: "32px",
-    color: theme.palette.error.main,
-    fontWeight: 600,
-    textTransform: "uppercase",
-  },
-  "& h3": {
-    fontSize: "16px",
-    lineHeight: 1.6,
-    fontWeight: 400,
-  },
 }))
 
 export const ButcherImage = styled(Image)({

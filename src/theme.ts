@@ -8,13 +8,13 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "var(--font-bebas), Arial, sans-serif",
     h1: {
-      fontSize: "18.5vw",
-      fontWeight: 100,
-      [`@media (min-width:1450px)`]: {
-        fontSize: "287px",
-      },
+      fontFamily: "var(--font-protest)",
+      fontStyle: "normal",
+      fontWeight: 400,
+      fontSize: "173px",
+      [`@media (min-width:1450px)`]: {},
     },
   },
 })
