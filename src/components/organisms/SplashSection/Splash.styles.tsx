@@ -3,25 +3,25 @@ import Button from "@mui/material/Button"
 import Box from "@mui/material/Box"
 import Image from "next/image"
 
-export const SectionWrapper = styled(Box)(({ theme }) => ({
-  backgroundColor: "#000",
+export const SectionWrapper = styled(Box)(() => ({
   color: "#fff",
-  padding: "4rem 2rem",
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  flexWrap: "wrap",
-  gap: "2rem",
+  maxWidth: "1200px",
+  padding: "0 5%",
+  margin: "0 auto",
+  height: "100vh",
 }))
 
-export const TextBlock = styled("div")(({ theme }) => ({
-  maxWidth: "600px",
+export const TextBlock = styled("div")(() => ({
   display: "flex",
   flexDirection: "column",
-  gap: theme.spacing(2),
+  flex: 4,
 }))
 
 export const ButcherImage = styled(Image)({
+  flex: 1,
   maxWidth: "100%",
   height: "auto",
 })
@@ -31,15 +31,11 @@ export const JoinButton = styled(Button)(() => ({
   alignItems: "center",
   gap: "0.5rem",
   padding: "0.75rem 1.5rem",
-  border: "2px solid white",
-  borderRadius: "9999px",
   backgroundColor: "transparent",
   color: "white",
   fontWeight: 700,
   textTransform: "uppercase",
-  fontSize: "14px",
-  "& img": {
-    width: "20px",
-    height: "20px",
-  },
+  fontSize: "28px",
+  border: "4px solid #FFFFFF",
+  borderRadius: "10px",
 }))

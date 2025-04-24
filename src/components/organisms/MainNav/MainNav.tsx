@@ -4,13 +4,15 @@
 import Logo from "@/components/atoms/Logo/Logo"
 
 // Styles
-import { StyledAppBar } from "./MainNav.styles"
+import { StyledMainNav, StyledWrapper } from "./MainNav.styles"
 
 function MainNav() {
   return (
-    <StyledAppBar>
-      <Logo />
-    </StyledAppBar>
+    <StyledMainNav>
+      <StyledWrapper>
+        <Logo />
+      </StyledWrapper>
+    </StyledMainNav>
   )
 }
 
