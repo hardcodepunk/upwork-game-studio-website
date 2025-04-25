@@ -6,6 +6,9 @@ const theme = createTheme({
     primary: {
       main: "#141414",
     },
+    secondary: {
+      main: "#960202",
+    },
   },
   typography: {
     fontFamily: "var(--font-bebas), Arial, sans-serif",
