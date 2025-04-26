@@ -14,7 +14,7 @@ const SplashSection = () => {
             first. Innovation always. And giveaways that slap.
           </Typography>
           <JoinButton>
-            <Image src="/icon__discord.svg" alt="Discord" width={37} height={41} />
+            <Image src="/icon/icon__discord.svg" alt="Discord" width={37} height={41} />
             Join the fun
           </JoinButton>
         </Box>

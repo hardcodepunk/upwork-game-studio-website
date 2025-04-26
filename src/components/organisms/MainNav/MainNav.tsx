@@ -1,7 +1,7 @@
 "use client"
 
 // Components
-import Logo from "@/components/atoms/Logo/Logo"
+import Logo from "@/components/molecules/Logo/Logo"
 
 // Styles
 import { StyledMainNav, StyledWrapper } from "./MainNav.styles"
