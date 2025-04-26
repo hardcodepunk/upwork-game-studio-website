@@ -6,4 +6,6 @@ export const StyledLogo = styled("div")(() => ({
   fontSize: "24px",
   fontWeight: "800",
   textTransform: "uppercase",
+  display: "flex",
+  gap: "7px",
 }))
