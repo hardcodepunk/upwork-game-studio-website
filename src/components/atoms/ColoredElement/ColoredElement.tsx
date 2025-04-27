@@ -4,9 +4,9 @@ import { StyledColoredElement } from "./ColoredElement.styles"
 // Interfaces
 import { IColoredElement } from "./ColoredElement.props"
 
-const ColoredElement = ({ color, content, fontSize }: IColoredElement) => {
+const ColoredElement = ({ color, content, fontSize, font }: IColoredElement) => {
   return (
-    <StyledColoredElement color={color} fontSize={fontSize}>
+    <StyledColoredElement font={font} color={color} fontSize={fontSize}>
       {content}
     </StyledColoredElement>
   )

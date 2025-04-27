@@ -1,7 +1,7 @@
 // Styles
 import theme from "@/theme"
 import { StyledLogo } from "./Logo.styles"
-import ColoredElement from "@/components/atoms/Line/ColoredElement"
+import ColoredElement from "@/components/atoms/ColoredElement/ColoredElement"
 
 const Logo = () => {
   return (

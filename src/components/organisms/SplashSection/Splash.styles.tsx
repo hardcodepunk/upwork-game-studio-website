@@ -26,7 +26,7 @@ export const ButcherImage = styled(Image)({
   height: "auto",
 })
 
-export const JoinButton = styled(Button)(() => ({
+export const StyledButton = styled(Button)(() => ({
   display: "flex",
   alignItems: "center",
   gap: "0.5rem",
@@ -38,4 +38,5 @@ export const JoinButton = styled(Button)(() => ({
   fontSize: "28px",
   border: "4px solid #FFFFFF",
   borderRadius: "10px",
+  marginTop: "80px",
 }))
