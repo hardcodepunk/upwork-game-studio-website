@@ -19,6 +19,12 @@ const theme = createTheme({
       fontSize: "173px",
       [`@media (min-width:1450px)`]: {},
     },
+    h2: {
+      fontStyle: "normal",
+      fontWeight: "400",
+      fontSize: "96px",
+      lineHeight: "115px",
+    },
   },
 })
 
