@@ -6,6 +6,7 @@ import Image from "next/image"
 export const SectionWrapper = styled(Box)(() => ({
   width: "100%",
   position: "relative",
+  height: "80vh",
 }))
 
 export const TextBlock = styled("div")(() => ({
@@ -15,7 +16,7 @@ export const TextBlock = styled("div")(() => ({
 }))
 
 export const StyledButton = styled(Button)(() => ({
-  display: "flex",
+  display: "inline-flex",
   alignItems: "center",
   gap: "0.5rem",
   padding: "0.75rem 1.5rem",
@@ -32,8 +33,7 @@ export const StyledButton = styled(Button)(() => ({
 export const StyledFeaturesWrapper = styled("div")(() => ({
   display: "flex",
   flexDirection: "column",
-  alignItems: "flex-end",
-  gap: "1rem",
+  paddingLeft: "30%",
 }))
 
 export const StyledFeaturesGrid = styled("ul")(() => ({

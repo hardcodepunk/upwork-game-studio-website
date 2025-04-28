@@ -40,6 +40,12 @@ const theme = createTheme({
       textTransform: "uppercase",
       fontSize: "34px",
     },
+    h5: {
+      fontStyle: "normal",
+      fontWeight: "400",
+      textTransform: "uppercase",
+      fontSize: "18px",
+    },
     body1: {
       fontStyle: "normal",
       fontWeight: "400",

@@ -17,23 +17,21 @@ const AboutSection = () => {
     <SectionWrapper>
       <StyledImage src="/img/table.png" alt="About illustration" width={1000} height={1000} />
       <TextBlock>
-        <Typography variant="h4">
-          COMING SOON <ColoredElement color={theme.palette.secondary.main} content={"—"} /> THE FUTURE OF SLOTS AWAITS
-        </Typography>
-        <Box>
-          <StyledFeaturesWrapper>
-            <StyledFeaturesGrid>
-              <FeatureItem text="Mind — Blowing Mechanics" />
-              <FeatureItem text="Competitions That Actually Mean Something" />
-              <FeatureItem text="Stories That Drag You In and Don't Let Go" />
-              <FeatureItem text="Monthly Top 4 Get Paid" />
-            </StyledFeaturesGrid>
-          </StyledFeaturesWrapper>
+        <StyledFeaturesWrapper>
+          <Typography variant="h4">
+            COMING SOON <ColoredElement color={theme.palette.secondary.main} content={"—"} /> THE FUTURE OF SLOTS AWAITS
+          </Typography>
+          <StyledFeaturesGrid>
+            <FeatureItem text="Mind — Blowing Mechanics" />
+            <FeatureItem text="Competitions That Actually Mean Something" />
+            <FeatureItem text="Stories That Drag You In and Don't Let Go" />
+            <FeatureItem text="Monthly Top 4 Get Paid" />
+          </StyledFeaturesGrid>
           <StyledButton>
             <Image src="/icon/icon__discord.svg" alt="Discord" width={37} height={41} />
             Get Notified
           </StyledButton>
-        </Box>
+        </StyledFeaturesWrapper>
       </TextBlock>
     </SectionWrapper>
   )
