@@ -1,7 +1,6 @@
 import { styled } from "@mui/material/styles"
 import Button from "@mui/material/Button"
 import Box from "@mui/material/Box"
-import Image from "next/image"
 
 export const SectionWrapper = styled(Box)(() => ({
   color: "#fff",
@@ -20,12 +19,6 @@ export const TextBlock = styled("div")(() => ({
   flex: 4,
 }))
 
-export const StyledImage = styled(Image)({
-  flex: 1,
-  maxWidth: "100%",
-  height: "auto",
-})
-
 export const StyledButton = styled(Button)(() => ({
   display: "flex",
   alignItems: "center",
@@ -41,17 +34,17 @@ export const StyledButton = styled(Button)(() => ({
   marginTop: "80px",
 }))
 
-export const StyledFeaturesWrapper = styled("section")(() => ({
+export const StyledFeaturesWrapper = styled("div")(() => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
   gap: "2rem",
   marginTop: "4rem",
+}))
 
-  "& .features-grid": {
-    display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
-    gap: "1rem 2rem",
-    marginTop: "2rem",
-  },
+export const StyledFeaturesGrid = styled("ul")(() => ({
+  display: "grid",
+  gridTemplateColumns: "repeat(2, 1fr)",
+  gap: "1rem 2rem",
+  marginTop: "2rem",
 }))

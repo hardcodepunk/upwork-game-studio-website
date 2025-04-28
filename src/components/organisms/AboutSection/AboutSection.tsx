@@ -1,5 +1,11 @@
 import Image from "next/image"
-import { SectionWrapper, TextBlock, StyledImage, StyledButton, StyledFeaturesWrapper } from "./AboutSection.styles"
+import {
+  SectionWrapper,
+  TextBlock,
+  StyledButton,
+  StyledFeaturesWrapper,
+  StyledFeaturesGrid,
+} from "./AboutSection.styles"
 import { Box, Typography } from "@mui/material"
 import ColoredElement from "@/components/atoms/ColoredElement/ColoredElement"
 import theme from "@/theme"
@@ -14,12 +20,12 @@ const AboutSection = () => {
         </Typography>
         <Box>
           <StyledFeaturesWrapper>
-            <div className="features-grid">
+            <StyledFeaturesGrid>
               <FeatureItem text="Mind — Blowing Mechanics" />
               <FeatureItem text="Competitions That Actually Mean Something" />
               <FeatureItem text="Stories That Drag You In and Don't Let Go" />
               <FeatureItem text="Monthly Top 4 Get Paid" />
-            </div>
+            </StyledFeaturesGrid>
           </StyledFeaturesWrapper>
           <StyledButton>
             <Image src="/icon/icon__discord.svg" alt="Discord" width={37} height={41} />

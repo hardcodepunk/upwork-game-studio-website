@@ -1,3 +1,3 @@
-interface IFeatureItem {
+export interface IFeatureItem {
   text: string
 }

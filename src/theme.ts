@@ -33,6 +33,13 @@ const theme = createTheme({
       fontSize: "50px",
       marginBottom: "40px",
     },
+    h4: {
+      fontFamily: "var(--font-protest)",
+      fontStyle: "normal",
+      fontWeight: "400",
+      textTransform: "uppercase",
+      fontSize: "34px",
+    },
     body1: {
       fontStyle: "normal",
       fontWeight: "400",
