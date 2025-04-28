@@ -13,9 +13,7 @@ export const StyledFooter = styled("div")(({ theme }) => ({
 
 export const StyledWrapper = styled("div")(() => ({
   display: "flex",
-  maxWidth: "1200px",
+  maxWidth: "100%",
   justifyContent: "space-between",
-  padding: "0 5%",
-  margin: "0 auto",
   flex: 1,
 }))

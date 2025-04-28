@@ -5,15 +5,28 @@ import SplashSection from "@/components/organisms/SplashSection/Splash"
 import Footer from "@/components/organisms/Footer/Footer"
 import CommunitySection from "@/components/organisms/CommunitySection/CommunitySection"
 import AboutSection from "@/components/organisms/AboutSection/AboutSection"
+import { styled } from "@mui/material"
+
+const StyledContainer = styled("div")(() => ({
+  color: "#fff",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  maxWidth: "1200px",
+  padding: "0 5%",
+  margin: "0 auto",
+  position: "relative",
+  flexDirection: "column",
+}))
 
 export default function Home() {
   return (
-    <>
+    <StyledContainer>
       <MainNav />
       <SplashSection />
       <AboutSection />
       <CommunitySection />
       <Footer />
-    </>
+    </StyledContainer>
   )
 }

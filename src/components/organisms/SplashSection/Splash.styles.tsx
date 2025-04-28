@@ -8,9 +8,6 @@ export const SectionWrapper = styled(Box)(() => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  maxWidth: "1200px",
-  padding: "0 5%",
-  margin: "0 auto",
   height: "100vh",
 }))
 
