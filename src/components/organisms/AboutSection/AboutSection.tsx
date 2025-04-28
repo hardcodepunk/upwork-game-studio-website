@@ -5,6 +5,7 @@ import {
   StyledButton,
   StyledFeaturesWrapper,
   StyledFeaturesGrid,
+  StyledImage,
 } from "./AboutSection.styles"
 import { Box, Typography } from "@mui/material"
 import ColoredElement from "@/components/atoms/ColoredElement/ColoredElement"
@@ -14,6 +15,7 @@ import FeatureItem from "@/components/molecules/FeatureItem/FeatureItem"
 const AboutSection = () => {
   return (
     <SectionWrapper>
+      <StyledImage src="/img/table.png" alt="About illustration" width={1000} height={1000} />
       <TextBlock>
         <Typography variant="h4">
           COMING SOON <ColoredElement color={theme.palette.secondary.main} content={"—"} /> THE FUTURE OF SLOTS AWAITS
@@ -29,13 +31,7 @@ const AboutSection = () => {
           </StyledFeaturesWrapper>
           <StyledButton>
             <Image src="/icon/icon__discord.svg" alt="Discord" width={37} height={41} />
-            Get in.
-            <ColoredElement
-              font={theme.typography.fontFamily}
-              color={theme.palette.secondary.main}
-              content={"Get Loud."}
-            />
-            Win BIG.
+            Get Notified
           </StyledButton>
         </Box>
       </TextBlock>
