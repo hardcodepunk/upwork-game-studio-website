@@ -20,7 +20,7 @@ export const TextBlock = styled("div")(() => ({
   flex: 4,
 }))
 
-export const ButcherImage = styled(Image)({
+export const StyledImage = styled(Image)({
   flex: 1,
   maxWidth: "100%",
   height: "auto",

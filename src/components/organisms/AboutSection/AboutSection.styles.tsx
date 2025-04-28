@@ -40,3 +40,18 @@ export const StyledButton = styled(Button)(() => ({
   borderRadius: "10px",
   marginTop: "80px",
 }))
+
+export const StyledFeaturesWrapper = styled("section")(() => ({
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  gap: "2rem",
+  marginTop: "4rem",
+
+  "& .features-grid": {
+    display: "grid",
+    gridTemplateColumns: "repeat(2, 1fr)",
+    gap: "1rem 2rem",
+    marginTop: "2rem",
+  },
+}))

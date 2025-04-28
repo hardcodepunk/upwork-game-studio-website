@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { SectionWrapper, TextBlock, ButcherImage, StyledButton } from "./CommunitySection.styles"
+import { SectionWrapper, TextBlock, StyledImage, StyledButton } from "./CommunitySection.styles"
 import { Box, Typography } from "@mui/material"
 import ColoredElement from "@/components/atoms/ColoredElement/ColoredElement"
 import theme from "@/theme"
@@ -31,7 +31,7 @@ const CommunitySection = () => {
           </StyledButton>
         </Box>
       </TextBlock>
-      <ButcherImage src="/img/community.svg" alt="Community illustration" width={314} height={314} />
+      <StyledImage src="/img/community.svg" alt="Community illustration" width={314} height={314} />
     </SectionWrapper>
   )
 }

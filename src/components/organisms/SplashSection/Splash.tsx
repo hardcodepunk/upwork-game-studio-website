@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { SectionWrapper, TextBlock, ButcherImage, StyledButton } from "./Splash.styles"
+import { SectionWrapper, TextBlock, StyledImage, StyledButton } from "./Splash.styles"
 import { Box, Typography } from "@mui/material"
 
 import Logo from "@/components/molecules/Logo/Logo"
@@ -29,7 +29,7 @@ const SplashSection = () => {
           </StyledButton>
         </Box>
       </TextBlock>
-      <ButcherImage src="/img/butcher.png" alt="Illustration of the butcher" width={637} height={646.86} />
+      <StyledImage src="/img/butcher.png" alt="Illustration of the Butcher" width={637} height={646.86} />
     </SectionWrapper>
   )
 }
