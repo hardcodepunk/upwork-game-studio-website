@@ -6,6 +6,7 @@ import Footer from "@/components/organisms/Footer/Footer"
 import CommunitySection from "@/components/organisms/CommunitySection/CommunitySection"
 import AboutSection from "@/components/organisms/AboutSection/AboutSection"
 import { styled } from "@mui/material"
+import FeaturedGames from "@/components/organisms/FeaturedGames/FeaturedGames"
 
 const StyledContainer = styled("div")(() => ({
   color: "#fff",
@@ -26,6 +27,7 @@ export default function Home() {
       <SplashSection />
       <AboutSection />
       <CommunitySection />
+      <FeaturedGames />
       <Footer />
     </StyledContainer>
   )
