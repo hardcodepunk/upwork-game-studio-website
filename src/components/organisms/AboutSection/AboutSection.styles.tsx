@@ -16,7 +16,6 @@ export const TextBlock = styled("div")(() => ({
 }))
 
 export const StyledButton = styled(Button)(() => ({
-  display: "inline-flex",
   alignItems: "center",
   gap: "0.5rem",
   padding: "0.75rem 1.5rem",
@@ -28,6 +27,8 @@ export const StyledButton = styled(Button)(() => ({
   border: "4px solid #FFFFFF",
   borderRadius: "10px",
   marginTop: "80px",
+  display: "inline-flex",
+  alignSelf: "flex-start",
 }))
 
 export const StyledFeaturesWrapper = styled("div")(() => ({
