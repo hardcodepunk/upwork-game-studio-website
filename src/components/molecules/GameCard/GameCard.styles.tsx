@@ -3,7 +3,8 @@ import { styled } from "@mui/material/styles"
 export const StyledCardWrapper = styled("div")({
   position: "relative",
   width: "160px",
-  height: "160px",
+  aspectRatio: "1 / 1",
+  flexShrink: 0,
   display: "flex",
   alignItems: "flex-end",
   justifyContent: "center",

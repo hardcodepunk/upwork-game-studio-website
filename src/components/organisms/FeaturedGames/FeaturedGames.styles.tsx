@@ -23,9 +23,17 @@ export const StyledHeader = styled("div")(({ theme }) => ({
 
 export const StyledScroll = styled(Box)({
   display: "flex",
+  flexWrap: "nowrap",
   overflowX: "auto",
+  overflowY: "hidden",
+  scrollBehavior: "smooth",
   gap: "1.5rem",
   paddingBottom: "0.5rem",
+
+  "&::-webkit-scrollbar": {
+    display: "none",
+  },
+  scrollbarWidth: "none",
 })
 
 export const ArrowButton = styled(IconButton)(({ theme }) => ({
