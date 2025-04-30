@@ -1,8 +1,12 @@
 import { styled } from "@mui/material/styles"
 import { Box, IconButton } from "@mui/material"
 
-export const StyledSection = styled("section")({
-  marginTop: "4rem",
+export const StyledWrapper = styled("section")({
+  color: "#fff",
+  display: "flex",
+  width: "100%",
+  flexDirection: "column",
+  margin: "10vh 0",
 })
 
 export const StyledHeader = styled("div")(({ theme }) => ({
