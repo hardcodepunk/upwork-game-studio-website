@@ -1,4 +1,4 @@
-import { StyledCardWrapper, StyledCardBorder, StyledCardTitle } from "./GameCard.styles"
+import { StyledCardWrapper, StyledCardBorder, StyledCardContent, StyledCardTitle } from "./GameCard.styles"
 
 interface GameCardProps {
   title: string
@@ -9,7 +9,9 @@ const GameCard = ({ title, active = false }: GameCardProps) => {
   return (
     <StyledCardWrapper>
       <StyledCardBorder active={active} />
-      <StyledCardTitle active={active}>{title}</StyledCardTitle>
+      <StyledCardContent>
+        <StyledCardTitle active={active}>{title}</StyledCardTitle>
+      </StyledCardContent>
     </StyledCardWrapper>
   )
 }

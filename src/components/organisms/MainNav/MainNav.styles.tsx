@@ -12,6 +12,7 @@ export const StyledMainNav = styled("div")(({ theme }) => ({
   left: 0,
   width: "100%",
   padding: "35px 0",
+  zIndex: "100",
 }))
 
 export const StyledWrapper = styled("div")(() => ({

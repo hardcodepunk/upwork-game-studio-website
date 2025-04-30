@@ -6,8 +6,8 @@ export const StyledCardWrapper = styled("div")({
   aspectRatio: "1 / 1",
   flexShrink: 0,
   display: "flex",
-  alignItems: "flex-end",
-  justifyContent: "center",
+  flexDirection: "column",
+  justifyContent: "flex-end",
 })
 
 export const StyledCardBorder = styled("div")<{ active?: boolean }>(({ active, theme }) => ({
@@ -19,14 +19,22 @@ export const StyledCardBorder = styled("div")<{ active?: boolean }>(({ active, t
   border: `2px solid ${active ? theme.palette.secondary.main : "#fff"}`,
   borderRadius: "8px",
   boxSizing: "border-box",
+  zIndex: 0,
 }))
+
+export const StyledCardContent = styled("div")({
+  position: "relative",
+  padding: "0.5rem",
+  zIndex: 1,
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "flex-start",
+})
 
 export const StyledCardTitle = styled("span")<{ active?: boolean }>(({ theme, active }) => ({
   fontFamily: "var(--font-protest), Arial, sans-serif",
   fontWeight: 800,
-  textTransform: "uppercase",
   fontSize: "14px",
+  textTransform: "uppercase",
   color: active ? theme.palette.secondary.main : "#fff",
-  zIndex: 1,
-  marginBottom: "0.5rem",
 }))

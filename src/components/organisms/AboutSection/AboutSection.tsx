@@ -7,7 +7,7 @@ import {
   StyledFeaturesGrid,
   StyledImage,
 } from "./AboutSection.styles"
-import { Box, Typography } from "@mui/material"
+import { Typography } from "@mui/material"
 import ColoredElement from "@/components/atoms/ColoredElement/ColoredElement"
 import theme from "@/theme"
 import FeatureItem from "@/components/molecules/FeatureItem/FeatureItem"

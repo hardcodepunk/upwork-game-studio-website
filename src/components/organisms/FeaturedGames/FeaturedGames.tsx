@@ -8,9 +8,9 @@ const FeaturedGames = () => {
 
   const scrollByCard = (direction: "left" | "right") => {
     if (!scrollRef.current) return
-    const card = scrollRef.current.querySelector("div") // assume 1st child is a card
+    const card = scrollRef.current.querySelector("div")
     const cardWidth = card?.clientWidth || 160
-    const gap = 24 // your gap (1.5rem) in px
+    const gap = 24
     const totalScroll = cardWidth + gap
 
     scrollRef.current.scrollBy({
