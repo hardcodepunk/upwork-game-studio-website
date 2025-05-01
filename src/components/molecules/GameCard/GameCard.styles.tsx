@@ -16,7 +16,7 @@ export const StyledCardBorder = styled("div")<{ active?: boolean }>(({ active, t
   left: 0,
   width: "100%",
   height: "100%",
-  border: `2px solid ${active ? theme.palette.secondary.main : "#fff"}`,
+  border: `4px solid ${active ? theme.palette.secondary.main : "#fff"}`,
   borderRadius: "8px",
   boxSizing: "border-box",
   zIndex: 0,

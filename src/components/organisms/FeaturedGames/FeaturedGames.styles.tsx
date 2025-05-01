@@ -26,9 +26,10 @@ export const StyledScroll = styled(Box)({
   flexWrap: "nowrap",
   overflowX: "auto",
   overflowY: "hidden",
-  scrollBehavior: "smooth",
   gap: "1.5rem",
   paddingBottom: "0.5rem",
+  scrollBehavior: "smooth",
+  cursor: "grab",
 
   "&::-webkit-scrollbar": {
     display: "none",

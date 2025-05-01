@@ -1,10 +1,12 @@
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import GameCard from "@/components/molecules/GameCard/GameCard"
 import { StyledWrapper, StyledHeader, StyledScroll, ArrowButton } from "./FeaturedGames.styles"
 import { ChevronLeft, ChevronRight } from "@mui/icons-material"
 
 const FeaturedGames = () => {
   const scrollRef = useRef<HTMLDivElement>(null)
+  const [isGrabbing, setIsGrabbing] = useState(false)
+  const pos = useRef({ left: 0, x: 0 })
 
   const scrollByCard = (direction: "left" | "right") => {
     if (!scrollRef.current) return
@@ -17,6 +19,28 @@ const FeaturedGames = () => {
       left: direction === "left" ? -totalScroll : totalScroll,
       behavior: "smooth",
     })
+  }
+
+  const onMouseDown = (e: React.MouseEvent) => {
+    if (!scrollRef.current) return
+    setIsGrabbing(true)
+    scrollRef.current.style.cursor = "grabbing"
+    pos.current = {
+      left: scrollRef.current.scrollLeft,
+      x: e.clientX,
+    }
+  }
+
+  const onMouseMove = (e: React.MouseEvent) => {
+    if (!scrollRef.current || !isGrabbing) return
+    const dx = e.clientX - pos.current.x
+    scrollRef.current.scrollLeft = pos.current.left - dx
+  }
+
+  const onMouseUp = () => {
+    if (!scrollRef.current) return
+    setIsGrabbing(false)
+    scrollRef.current.style.cursor = "grab"
   }
 
   return (
@@ -33,7 +57,13 @@ const FeaturedGames = () => {
         </div>
       </StyledHeader>
 
-      <StyledScroll ref={scrollRef}>
+      <StyledScroll
+        ref={scrollRef}
+        onMouseDown={onMouseDown}
+        onMouseMove={onMouseMove}
+        onMouseUp={onMouseUp}
+        onMouseLeave={onMouseUp}
+      >
         <GameCard title="Title" />
         <GameCard title="Title" active />
         <GameCard title="Title" />
