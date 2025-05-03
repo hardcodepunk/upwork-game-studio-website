@@ -12,7 +12,7 @@ export const SectionWrapper = styled(Box)(() => ({
   marginRight: "20vw",
   maxWidth: "100%",
   position: "relative",
-  [`@media (max-width:950px)`]: {
+  [`@media (max-width:1100px)`]: {
     marginRight: "30vw",
   },
 }))
@@ -29,12 +29,16 @@ export const StyledImage = styled(Image)({
   right: "-25vw",
   height: "500px",
   width: "auto",
-  [`@media (max-width:950px)`]: {
+  [`@media (max-width:1100px)`]: {
     right: "-40vw",
     bottom: "15vh",
   },
+  [`@media (max-width:800px)`]: {
+    height: "350px",
+  },
   [`@media (max-width:600px)`]: {
     height: "300px",
+    bottom: "10vh",
   },
 })
 
