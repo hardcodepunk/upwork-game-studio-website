@@ -9,6 +9,12 @@ export const SectionWrapper = styled(Box)(() => ({
   justifyContent: "space-between",
   alignItems: "center",
   height: "100vh",
+  marginRight: "20vw",
+  maxWidth: "100%",
+  position: "relative",
+  [`@media (max-width:950px)`]: {
+    marginRight: "30vw",
+  },
 }))
 
 export const TextBlock = styled("div")(() => ({
@@ -18,9 +24,18 @@ export const TextBlock = styled("div")(() => ({
 }))
 
 export const StyledImage = styled(Image)({
-  flex: 1,
-  maxWidth: "100%",
-  height: "auto",
+  position: "absolute",
+  bottom: "10vh",
+  right: "-25vw",
+  height: "500px",
+  width: "auto",
+  [`@media (max-width:950px)`]: {
+    right: "-40vw",
+    bottom: "15vh",
+  },
+  [`@media (max-width:600px)`]: {
+    height: "300px",
+  },
 })
 
 export const StyledButton = styled(Button)(() => ({
