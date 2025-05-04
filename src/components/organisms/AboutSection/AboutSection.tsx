@@ -2,7 +2,6 @@ import Image from "next/image"
 import {
   SectionWrapper,
   TextBlock,
-  StyledButton,
   StyledFeaturesWrapper,
   StyledFeaturesGrid,
   StyledImage,
@@ -11,6 +10,7 @@ import { Typography } from "@mui/material"
 import ColoredElement from "@/components/atoms/ColoredElement/ColoredElement"
 import theme from "@/theme"
 import FeatureItem from "@/components/molecules/FeatureItem/FeatureItem"
+import ButtonCustom from "@/components/atoms/ButtonCustom/ButtonCustom"
 
 const AboutSection = () => {
   return (
@@ -27,10 +27,13 @@ const AboutSection = () => {
             <FeatureItem text="Stories That Drag You In and Don't Let Go" />
             <FeatureItem text="Monthly Top 4 Get Paid" />
           </StyledFeaturesGrid>
-          <StyledButton>
-            <Image src="/icon/icon__discord.svg" alt="Discord" width={37} height={41} />
-            Get Notified
-          </StyledButton>
+          <ButtonCustom
+            imgSrc={"/icon/icon__discord.svg"}
+            altText="Discord"
+            imgHeight={41}
+            imgWidth={37}
+            label="Get Notified"
+          />
         </StyledFeaturesWrapper>
       </TextBlock>
     </SectionWrapper>

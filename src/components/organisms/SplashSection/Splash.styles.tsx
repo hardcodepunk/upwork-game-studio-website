@@ -49,7 +49,7 @@ export const StyledImage = styled(Image)({
   },
 })
 
-export const StyledButton = styled(Button)(() => ({
+export const StyledButton = styled(Button)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   gap: "0.5rem",
@@ -72,5 +72,8 @@ export const StyledButton = styled(Button)(() => ({
       width: 20,
       height: "auto",
     },
+  },
+  ":hover": {
+    border: `4px solid ${theme.palette.secondary.main}`,
   },
 }))

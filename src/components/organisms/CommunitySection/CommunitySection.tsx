@@ -1,8 +1,8 @@
-import Image from "next/image"
-import { SectionWrapper, TextBlock, StyledImage, StyledButton } from "./CommunitySection.styles"
+import { SectionWrapper, TextBlock, StyledImage } from "./CommunitySection.styles"
 import { Box, Typography } from "@mui/material"
 import ColoredElement from "@/components/atoms/ColoredElement/ColoredElement"
 import theme from "@/theme"
+import ButtonCustom from "@/components/atoms/ButtonCustom/ButtonCustom"
 
 const CommunitySection = () => {
   return (
@@ -19,16 +19,13 @@ const CommunitySection = () => {
             <ColoredElement color={theme.palette.secondary.main} content={"—"} /> limit madness. Real people. Real
             prizes.
           </Typography>
-          <StyledButton>
-            <Image src="/icon/icon__discord.svg" alt="Discord" width={37} height={41} />
-            Get in.
-            <ColoredElement
-              font={theme.typography.fontFamily}
-              color={theme.palette.secondary.main}
-              content={"Get Loud."}
-            />
-            Win BIG.
-          </StyledButton>
+          <ButtonCustom
+            imgSrc={"/icon/icon__discord.svg"}
+            altText="Discord"
+            imgHeight={41}
+            imgWidth={37}
+            label="Get in. Get loud. Win big."
+          />
         </Box>
       </TextBlock>
       <StyledImage src="/img/community.svg" alt="Community illustration" width={314} height={314} />
