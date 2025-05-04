@@ -9,4 +9,10 @@ export const StyledLogo = styled("span")(() => ({
   display: "inline-flex",
   gap: "7px",
   verticalAlign: "middle",
+  [`@media (max-width:600px)`]: {
+    fontSize: "16px",
+    span: {
+      fontSize: "16px",
+    },
+  },
 }))

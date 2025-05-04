@@ -7,6 +7,10 @@ export const SectionWrapper = styled(Box)(() => ({
   width: "100%",
   position: "relative",
   height: "80vh",
+  "@media (max-width:950px)": {
+    height: "auto",
+    padding: "0 0 100px",
+  },
 }))
 
 export const TextBlock = styled("div")(() => ({
@@ -29,19 +33,36 @@ export const StyledButton = styled(Button)(() => ({
   marginTop: "80px",
   display: "inline-flex",
   alignSelf: "flex-start",
+  "@media (max-width:950px)": {
+    gap: "0.25rem",
+    padding: "0.25rem 0.75rem",
+    fontSize: "16px",
+    border: "3px solid #FFFFFF",
+    marginTop: "40px",
+    img: {
+      width: 20,
+      height: "auto",
+    },
+  },
 }))
 
 export const StyledFeaturesWrapper = styled("div")(() => ({
   display: "flex",
   flexDirection: "column",
   paddingLeft: "30%",
+  [`@media (max-width:950px)`]: {
+    paddingLeft: "0",
+  },
 }))
 
 export const StyledFeaturesGrid = styled("ul")(() => ({
   display: "grid",
   gridTemplateColumns: "repeat(2, 1fr)",
-  gap: "1rem 2rem",
+  gap: "0.5rem 1rem",
   marginTop: "2rem",
+  [`@media (max-width:950px)`]: {
+    gridTemplateColumns: "repeat(1, 1fr)",
+  },
 }))
 
 export const StyledImage = styled(Image)(() => ({
@@ -49,4 +70,7 @@ export const StyledImage = styled(Image)(() => ({
   width: "90%",
   height: "auto",
   bottom: 0,
+  [`@media (max-width:950px)`]: {
+    transform: "scaleX(-1)",
+  },
 }))

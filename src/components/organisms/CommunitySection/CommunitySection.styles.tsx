@@ -10,6 +10,10 @@ export const SectionWrapper = styled(Box)(() => ({
   alignItems: "center",
   height: "100vh",
   width: "100%",
+  "@media (max-width:950px)": {
+    height: "auto",
+    padding: "70px 0",
+  },
 }))
 
 export const TextBlock = styled("div")(() => ({
@@ -22,6 +26,9 @@ export const StyledImage = styled(Image)({
   flex: 1,
   maxWidth: "100%",
   height: "auto",
+  [`@media (max-width:1100px)`]: {
+    display: "none",
+  },
 })
 
 export const StyledButton = styled(Button)(() => ({
@@ -37,4 +44,15 @@ export const StyledButton = styled(Button)(() => ({
   border: "4px solid #FFFFFF",
   borderRadius: "10px",
   marginTop: "80px",
+  "@media (max-width:950px)": {
+    gap: "0.25rem",
+    padding: "0.25rem 0.75rem",
+    fontSize: "16px",
+    border: "3px solid #FFFFFF",
+    marginTop: "40px",
+    img: {
+      width: 20,
+      height: "auto",
+    },
+  },
 }))
