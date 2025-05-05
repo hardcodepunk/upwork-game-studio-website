@@ -11,7 +11,7 @@ export const StyledButton = styled(Button)(({ theme }) => ({
   fontSize: "28px",
   border: "4px solid #FFFFFF",
   borderRadius: "10px",
-  marginTop: "80px",
+  margin: "40px 0 20px",
   display: "inline-flex",
   alignSelf: "flex-start",
   "@media (max-width:950px)": {
@@ -19,7 +19,7 @@ export const StyledButton = styled(Button)(({ theme }) => ({
     padding: "0.25rem 0.75rem",
     fontSize: "16px",
     border: "3px solid #FFFFFF",
-    marginTop: "40px",
+    margin: "20px 0 10px",
     img: {
       width: 20,
       height: "auto",
