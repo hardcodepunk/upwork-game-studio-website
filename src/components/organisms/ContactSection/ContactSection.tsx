@@ -1,14 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import {
-  StyledContactWrapper,
-  StyledForm,
-  StyledInput,
-  StyledTextArea,
-  StyledSubmitButton,
-  StyledTitle,
-} from "./ContactSection.styles"
+import { StyledContactWrapper, StyledForm, StyledInput, StyledTextArea, StyledTitle } from "./ContactSection.styles"
 import { StyledButton } from "@/components/atoms/ButtonCustom/ButtonCustom.styles"
 
 const ContactSection = () => {
@@ -25,7 +18,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Replace with actual backend logic (e.g., API or EmailJS)
+    // to do — still need to connect
     console.log("Send message:", form)
     alert("Message sent (not really, this is just a demo)")
   }
