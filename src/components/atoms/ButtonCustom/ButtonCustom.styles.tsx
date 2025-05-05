@@ -14,6 +14,7 @@ export const StyledButton = styled(Button)(({ theme }) => ({
   margin: "40px 0 20px",
   display: "inline-flex",
   alignSelf: "flex-start",
+  background: "#141414",
   "@media (max-width:950px)": {
     gap: "0.25rem",
     padding: "0.25rem 0.75rem",
