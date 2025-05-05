@@ -8,6 +8,7 @@ import AboutSection from "@/components/organisms/AboutSection/AboutSection"
 import { styled } from "@mui/material"
 import FeaturedGames from "@/components/organisms/FeaturedGames/FeaturedGames"
 import ContactSection from "@/components/organisms/ContactSection/ContactSection"
+import GallerySlider from "@/components/organisms/GallerySlider/GallerySlider"
 
 const StyledContainer = styled("div")(() => ({
   color: "#fff",
@@ -23,14 +24,19 @@ const StyledContainer = styled("div")(() => ({
 
 export default function Home() {
   return (
-    <StyledContainer>
-      <MainNav />
-      <SplashSection />
-      <AboutSection />
-      <CommunitySection />
-      <FeaturedGames />
-      <ContactSection />
-      <Footer />
-    </StyledContainer>
+    <>
+      <StyledContainer>
+        <MainNav />
+        <SplashSection />
+      </StyledContainer>
+      <GallerySlider />
+      <StyledContainer>
+        <AboutSection />
+        <CommunitySection />
+        <FeaturedGames />
+        <ContactSection />
+        <Footer />
+      </StyledContainer>
+    </>
   )
 }
