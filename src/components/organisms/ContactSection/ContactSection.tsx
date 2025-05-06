@@ -20,6 +20,7 @@ const ContactSection = () => {
     name: "",
     email: "",
     message: "",
+    cv: null as File | null,
   })
 
   const [selectedFileName, setSelectedFileName] = useState("")
@@ -46,19 +47,22 @@ const ContactSection = () => {
       if (!isPdf) {
         setFileError("Only PDF files are allowed.")
         setSelectedFileName("")
+        setForm(prev => ({ ...prev, cv: null }))
       } else if (file.size > maxSize) {
         setFileError("File size must be under 5MB.")
         setSelectedFileName("")
+        setForm(prev => ({ ...prev, cv: null }))
       } else {
         setFileError("")
         setSelectedFileName(file.name)
+        setForm(prev => ({ ...prev, cv: file }))
       }
     }
   }
 
   return (
     <StyledContactWrapper>
-      <StyledTitle>Contact Us</StyledTitle>
+      <StyledTitle>Contact Us / Spontaneous Candidacy</StyledTitle>
       <StyledForm onSubmit={handleSubmit}>
         <StyledInput label="Name" name="name" value={form.name} onChange={handleChange} fullWidth required />
         <StyledInput

@@ -66,21 +66,34 @@ export const HiddenFileInput = styled("input")({
   display: "none",
 })
 
-export const FileLabel = styled("label")({
-  backgroundColor: "transparent",
-  border: "2px solid white",
+export const FileLabel = styled("label")(({ theme }) => ({
+  fontFamily: theme.typography.fontFamily,
+  alignItems: "center",
+  backgroundColor: "#141414",
   color: "white",
-  padding: "0.5rem 1rem",
-  fontWeight: 700,
   textTransform: "uppercase",
-  fontSize: "16px",
-  borderRadius: "6px",
+  border: "4px solid #FFFFFF",
+  borderRadius: "10px",
+  margin: "40px 0 20px",
+  display: "inline-flex",
+  alignSelf: "flex-start",
   cursor: "pointer",
-  width: "fit-content",
+  transition: "border-color 0.3s ease",
+  padding: "1rem 1.5rem",
+  fontSize: "16px",
   "&:hover": {
-    backgroundColor: "#ffffff10",
+    border: `4px solid ${theme.palette.secondary.main}`,
   },
-})
+  "@media (max-width:950px)": {
+    gap: "0.25rem",
+    padding: "0.25rem 0.75rem",
+    fontSize: "16px",
+    border: "2px solid #FFFFFF",
+    "&:hover": {
+      border: `2px solid ${theme.palette.secondary.main}`,
+    },
+  },
+}))
 
 export const FileError = styled(Typography)({
   color: "#f44336",
