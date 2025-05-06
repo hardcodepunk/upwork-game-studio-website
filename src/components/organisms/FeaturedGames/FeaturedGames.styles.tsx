@@ -12,7 +12,7 @@ export const StyledWrapper = styled("section")({
 export const StyledHeader = styled("div")(({ theme }) => ({
   fontFamily: "var(--font-protest), Arial, sans-serif",
   fontSize: "24px",
-  fontWeight: 800,
+  fontWeight: "normal",
   textTransform: "uppercase",
   display: "flex",
   justifyContent: "space-between",

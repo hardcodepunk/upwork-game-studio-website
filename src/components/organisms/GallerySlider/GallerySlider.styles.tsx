@@ -6,7 +6,8 @@ export const StyledSliderWrapper = styled(Box)({
   position: "relative",
   overflow: "hidden",
   aspectRatio: "16 / 6",
-  margin: " 0 0 100px",
+  margin: "0 auto 100px",
+  maxWidth: "1440px",
   "@media (max-width:950px)": {
     aspectRatio: "16 / 9",
   },

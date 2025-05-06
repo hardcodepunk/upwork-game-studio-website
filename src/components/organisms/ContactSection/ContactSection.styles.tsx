@@ -27,19 +27,15 @@ export const StyledForm = styled("form")({
 
 export const StyledInput = styled(TextField)(() => ({
   backgroundColor: "#1a1a1a",
-
   "& label": {
     color: "#fff",
   },
-
   "& label.Mui-focused": {
     color: "#fff",
   },
-
   "& .MuiInputBase-input": {
     color: "#fff",
   },
-
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
       borderColor: "#555",
@@ -57,7 +53,41 @@ export const StyledTextArea = styled(StyledInput)({
   textarea: {
     color: "#fff",
   },
-  label: {
-    color: "#fff",
+})
+
+// File Upload Styling
+export const StyledFileInputWrapper = styled(Box)({
+  display: "flex",
+  flexDirection: "column",
+  gap: "0.5rem",
+})
+
+export const HiddenFileInput = styled("input")({
+  display: "none",
+})
+
+export const FileLabel = styled("label")({
+  backgroundColor: "transparent",
+  border: "2px solid white",
+  color: "white",
+  padding: "0.5rem 1rem",
+  fontWeight: 700,
+  textTransform: "uppercase",
+  fontSize: "16px",
+  borderRadius: "6px",
+  cursor: "pointer",
+  width: "fit-content",
+  "&:hover": {
+    backgroundColor: "#ffffff10",
   },
+})
+
+export const FileError = styled(Typography)({
+  color: "#f44336",
+  fontSize: "14px",
+})
+
+export const FileName = styled(Typography)({
+  color: "#ccc",
+  fontSize: "14px",
 })

@@ -7,7 +7,6 @@ import {
 } from "./AboutSection.styles"
 import { Typography } from "@mui/material"
 import ColoredElement from "@/components/atoms/ColoredElement/ColoredElement"
-import theme from "@/theme"
 import FeatureItem from "@/components/molecules/FeatureItem/FeatureItem"
 import ButtonCustom from "@/components/atoms/ButtonCustom/ButtonCustom"
 
@@ -18,7 +17,8 @@ const AboutSection = () => {
       <TextBlock>
         <StyledFeaturesWrapper>
           <Typography variant="h4">
-            COMING SOON <ColoredElement color={theme.palette.secondary.main} content={"—"} /> THE FUTURE OF SLOTS AWAITS
+            COMING SOON <ColoredElement color={"theme.palette.secondary.light"} content={"—"} /> THE FUTURE OF SLOTS
+            AWAITS
           </Typography>
           <StyledFeaturesGrid>
             <FeatureItem text="Mind — Blowing Mechanics" />
