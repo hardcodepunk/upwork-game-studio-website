@@ -1,6 +1,9 @@
+// Next
+import Image from "next/image"
+
+// MUI
 import { styled } from "@mui/material/styles"
 import Box from "@mui/material/Box"
-import Image from "next/image"
 
 export const SectionWrapper = styled(Box)(() => ({
   width: "100%",

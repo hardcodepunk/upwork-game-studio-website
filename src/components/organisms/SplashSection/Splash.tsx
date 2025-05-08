@@ -1,10 +1,16 @@
+// Styles
 import { SectionWrapper, TextBlock, StyledImage } from "./Splash.styles"
+
+// MUI
 import { Box, Typography } from "@mui/material"
 
+// Components
 import Logo from "@/components/molecules/Logo/Logo"
 import ColoredElement from "@/components/atoms/ColoredElement/ColoredElement"
-import theme from "@/theme"
 import ButtonCustom from "@/components/atoms/ButtonCustom/ButtonCustom"
+
+// Theme
+import theme from "@/theme"
 
 const SplashSection = () => {
   return (

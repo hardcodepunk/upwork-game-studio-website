@@ -1,3 +1,4 @@
+// MUI
 import { Button, styled } from "@mui/material"
 
 export const StyledButton = styled(Button)(({ theme }) => ({
@@ -15,6 +16,9 @@ export const StyledButton = styled(Button)(({ theme }) => ({
   display: "inline-flex",
   alignSelf: "flex-start",
   background: "#141414",
+  ":hover": {
+    border: `4px solid ${theme.palette.secondary.main}`,
+  },
   "@media (max-width:950px)": {
     gap: "0.25rem",
     padding: "0.25rem 0.75rem",
@@ -25,8 +29,8 @@ export const StyledButton = styled(Button)(({ theme }) => ({
       width: 20,
       height: "auto",
     },
-  },
-  ":hover": {
-    border: `3px solid ${theme.palette.secondary.main}`,
+    ":hover": {
+      border: `3px solid ${theme.palette.secondary.main}`,
+    },
   },
 }))

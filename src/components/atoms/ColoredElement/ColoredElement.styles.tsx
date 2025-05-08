@@ -1,4 +1,7 @@
+// MUI
 import { styled } from "@mui/material/styles"
+
+// Properties
 import { IColoredElement } from "./ColoredElement.props"
 
 export const StyledColoredElement = styled("span")<IColoredElement>(({ fontSize, color, font }) => ({

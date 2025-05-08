@@ -1,7 +1,14 @@
+// React
 import { useRef, useState } from "react"
-import GameCard from "@/components/molecules/GameCard/GameCard"
-import { StyledWrapper, StyledHeader, StyledScroll, ArrowButton } from "./FeaturedGames.styles"
+
+// MUI
 import { ChevronLeft, ChevronRight } from "@mui/icons-material"
+
+// Components
+import GameCard from "@/components/molecules/GameCard/GameCard"
+
+// Styles
+import { StyledWrapper, StyledHeader, StyledScroll, ArrowButton } from "./FeaturedGames.styles"
 
 const FeaturedGames = () => {
   const scrollRef = useRef<HTMLDivElement>(null)

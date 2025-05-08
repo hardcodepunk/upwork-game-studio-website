@@ -1,6 +1,11 @@
-import { IButtonCustom } from "./ButtonCustom.props"
-import { StyledButton } from "./ButtonCustom.styles"
+// Next
 import Image from "next/image"
+
+// Props
+import { IButtonCustom } from "./ButtonCustom.props"
+
+// Styles
+import { StyledButton } from "./ButtonCustom.styles"
 
 const CustomButton = ({ label, imgSrc, altText, imgWidth, imgHeight }: IButtonCustom) => {
   return (

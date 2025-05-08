@@ -1,6 +1,11 @@
-import { IFeatureItem } from "./FeatureItem.props"
-import { StyledFeatureItem, StyledText } from "./FeatureItem.styles"
+// Next
 import Image from "next/image"
+
+// Properties
+import { IFeatureItem } from "./FeatureItem.props"
+
+// Styles
+import { StyledFeatureItem, StyledText } from "./FeatureItem.styles"
 
 const FeatureItem = ({ text }: IFeatureItem) => {
   return (

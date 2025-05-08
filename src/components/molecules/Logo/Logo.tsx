@@ -1,6 +1,10 @@
-// Styles
+// Theme
 import theme from "@/theme"
+
+// Styles
 import { StyledLogo } from "./Logo.styles"
+
+// Components
 import ColoredElement from "@/components/atoms/ColoredElement/ColoredElement"
 
 const Logo = () => {

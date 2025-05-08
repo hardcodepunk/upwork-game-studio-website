@@ -1,6 +1,9 @@
 "use client"
 
+// React
 import { useState } from "react"
+
+// Styles
 import {
   StyledContactWrapper,
   StyledForm,
@@ -14,6 +17,8 @@ import {
   FileName,
   StyledButtonWrapper,
 } from "./ContactSection.styles"
+
+// Components
 import { StyledButton } from "@/components/atoms/ButtonCustom/ButtonCustom.styles"
 
 const ContactSection = () => {

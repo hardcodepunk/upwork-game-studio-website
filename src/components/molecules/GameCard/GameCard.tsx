@@ -1,3 +1,4 @@
+// Styles
 import { StyledCardWrapper, StyledCardBorder, StyledCardContent, StyledCardTitle } from "./GameCard.styles"
 
 interface GameCardProps {

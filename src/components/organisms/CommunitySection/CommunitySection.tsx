@@ -1,8 +1,15 @@
+// Styles
 import { SectionWrapper, TextBlock, StyledImage } from "./CommunitySection.styles"
+
+// MUI
 import { Box, Typography } from "@mui/material"
+
+// Components
 import ColoredElement from "@/components/atoms/ColoredElement/ColoredElement"
-import theme from "@/theme"
 import ButtonCustom from "@/components/atoms/ButtonCustom/ButtonCustom"
+
+// Theme
+import theme from "@/theme"
 
 const CommunitySection = () => {
   return (

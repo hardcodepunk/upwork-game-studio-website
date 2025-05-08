@@ -1,3 +1,4 @@
+// Styles
 import {
   SectionWrapper,
   TextBlock,
@@ -5,7 +6,11 @@ import {
   StyledFeaturesGrid,
   StyledImage,
 } from "./AboutSection.styles"
+
+// MUI
 import { Typography } from "@mui/material"
+
+// Components
 import ColoredElement from "@/components/atoms/ColoredElement/ColoredElement"
 import FeatureItem from "@/components/molecules/FeatureItem/FeatureItem"
 import ButtonCustom from "@/components/atoms/ButtonCustom/ButtonCustom"

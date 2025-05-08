@@ -1,6 +1,13 @@
 "use client"
 
+// React
 import { useEffect, useRef, useState } from "react"
+
+// MUI
+import { ChevronLeft, ChevronRight } from "@mui/icons-material"
+import { Typography } from "@mui/material"
+
+// Styles
 import {
   StyledSliderWrapper,
   StyledImageContainer,
@@ -10,9 +17,9 @@ import {
   StyledImageSlide,
   StyledSlideContent,
 } from "./GallerySlider.styles"
-import { ChevronLeft, ChevronRight } from "@mui/icons-material"
+
+// Styles
 import { StyledButton } from "@/components/atoms/ButtonCustom/ButtonCustom.styles"
-import { Typography } from "@mui/material"
 
 const slides = [
   {
