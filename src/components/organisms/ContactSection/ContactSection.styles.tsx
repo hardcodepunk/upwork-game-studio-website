@@ -79,8 +79,12 @@ export const FileLabel = styled("label")(({ theme }) => ({
   alignSelf: "flex-start",
   cursor: "pointer",
   transition: "border-color 0.3s ease",
-  padding: "1rem 1.5rem",
-  fontSize: "16px",
+  gap: "0.5rem",
+  padding: "0.75rem 1.5rem",
+  fontWeight: 700,
+  fontSize: "28px",
+  lineHeight: "1.75",
+
   "&:hover": {
     border: `4px solid ${theme.palette.secondary.main}`,
   },
@@ -88,9 +92,10 @@ export const FileLabel = styled("label")(({ theme }) => ({
     gap: "0.25rem",
     padding: "0.25rem 0.75rem",
     fontSize: "16px",
-    border: "2px solid #FFFFFF",
+    border: "3px solid #FFFFFF",
+    margin: "20px 0 10px",
     "&:hover": {
-      border: `2px solid ${theme.palette.secondary.main}`,
+      border: `3px solid ${theme.palette.secondary.main}`,
     },
   },
 }))
@@ -103,4 +108,11 @@ export const FileError = styled(Typography)({
 export const FileName = styled(Typography)({
   color: "#ccc",
   fontSize: "14px",
+})
+
+export const StyledButtonWrapper = styled("div")({
+  display: "flex",
+  gap: "1rem",
+  flexWrap: "wrap",
+  alignItems: "center",
 })

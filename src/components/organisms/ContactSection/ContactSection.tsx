@@ -12,6 +12,7 @@ import {
   FileLabel,
   FileError,
   FileName,
+  StyledButtonWrapper,
 } from "./ContactSection.styles"
 import { StyledButton } from "@/components/atoms/ButtonCustom/ButtonCustom.styles"
 
@@ -85,14 +86,16 @@ const ContactSection = () => {
           required
         />
 
-        <StyledFileInputWrapper>
-          <HiddenFileInput id="cv-upload" type="file" accept="application/pdf" onChange={handleFileChange} />
-          <FileLabel htmlFor="cv-upload">Upload CV (PDF only)</FileLabel>
-          {selectedFileName && <FileName>{selectedFileName}</FileName>}
-          {fileError && <FileError>{fileError}</FileError>}
-        </StyledFileInputWrapper>
+        <StyledButtonWrapper>
+          <StyledFileInputWrapper>
+            <HiddenFileInput id="cv-upload" type="file" accept="application/pdf" onChange={handleFileChange} />
+            <FileLabel htmlFor="cv-upload">Upload CV (PDF only)</FileLabel>
+            {selectedFileName && <FileName>{selectedFileName}</FileName>}
+            {fileError && <FileError>{fileError}</FileError>}
+          </StyledFileInputWrapper>
 
-        <StyledButton type="submit">Submit</StyledButton>
+          <StyledButton type="submit">Submit</StyledButton>
+        </StyledButtonWrapper>
       </StyledForm>
     </StyledContactWrapper>
   )

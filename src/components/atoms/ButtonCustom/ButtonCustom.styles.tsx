@@ -27,6 +27,6 @@ export const StyledButton = styled(Button)(({ theme }) => ({
     },
   },
   ":hover": {
-    border: `4px solid ${theme.palette.secondary.main}`,
+    border: `3px solid ${theme.palette.secondary.main}`,
   },
 }))
