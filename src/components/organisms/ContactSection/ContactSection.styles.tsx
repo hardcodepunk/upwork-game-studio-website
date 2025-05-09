@@ -26,7 +26,8 @@ export const StyledForm = styled("form")({
 })
 
 export const StyledInput = styled(TextField)(() => ({
-  backgroundColor: "#1a1a1a",
+  backgroundColor: "#141414",
+
   "& label": {
     color: "#fff",
   },
