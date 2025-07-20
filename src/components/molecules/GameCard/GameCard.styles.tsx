@@ -1,7 +1,11 @@
 // MUI
 import { styled } from "@mui/material/styles"
 
-export const StyledCardWrapper = styled("div")({
+interface StyledCardWrapperProps {
+  backgroundImage?: string
+}
+
+export const StyledCardWrapper = styled("div")<StyledCardWrapperProps>(({ backgroundImage }) => ({
   position: "relative",
   width: "160px",
   aspectRatio: "1 / 1",
@@ -9,7 +13,11 @@ export const StyledCardWrapper = styled("div")({
   display: "flex",
   flexDirection: "column",
   justifyContent: "flex-end",
-})
+  backgroundImage: backgroundImage ? `url(${backgroundImage})` : undefined,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  overflow: "hidden",
+}))
 
 export const StyledCardBorder = styled("div")<{ active?: boolean }>(({ active, theme }) => ({
   position: "absolute",

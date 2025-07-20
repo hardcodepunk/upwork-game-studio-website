@@ -4,11 +4,12 @@ import { StyledCardWrapper, StyledCardBorder, StyledCardContent, StyledCardTitle
 interface GameCardProps {
   title: string
   active?: boolean
+  backgroundImage?: string
 }
 
-const GameCard = ({ title, active = false }: GameCardProps) => {
+const GameCard = ({ title, active = false, backgroundImage }: GameCardProps) => {
   return (
-    <StyledCardWrapper>
+    <StyledCardWrapper backgroundImage={backgroundImage}>
       <StyledCardBorder active={active} />
       <StyledCardContent>
         <StyledCardTitle active={active}>{title}</StyledCardTitle>
