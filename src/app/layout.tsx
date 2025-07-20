@@ -31,7 +31,7 @@ const bebas = Bebas_Neue({
 export const metadata: Metadata = {
   title: "Full-Clip",
   description:
-    "Design, disrupt, repeat. Full-Clip isn’t here to blend in. We’re redefining the online slots game, one mechanic at a time. Players first. Innovation always. And giveaways that slap.",
+    "Design, disrupt, repeat. Full-Clip isn’t here to blend in. We’re redefining the online game scene, one mechanic at a time. Players first. Innovation always. And giveaways that slap.",
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
