@@ -23,21 +23,21 @@ import { StyledButton } from "@/components/atoms/ButtonCustom/ButtonCustom.style
 
 const slides = [
   {
-    image: "/img/gallery/placeholder.jpg",
-    title: "Slide One",
-    description: "This is the future of slots. Tap into the next-gen.",
+    image: "/img/gallery/bold-gameplay.jpg",
+    title: "Bold gameplay",
+    description: "Our games challenge, excite, and keep players coming back for more..",
     cta: "Play Now",
   },
   {
-    image: "/img/gallery/placeholder.jpg",
-    title: "Slide Two",
-    description: "Fully on-chain, truly player-first. Let's go.",
+    image: "/img/gallery/next-level.png",
+    title: "Next Level",
+    description: "Pushing boundaries in design, tech, and storytelling - welcome to the future of play.",
     cta: "Join the Waitlist",
   },
   {
-    image: "/img/gallery/placeholder.jpg",
-    title: "Slide Three",
-    description: "No more boring spins. Everything's changing.",
+    image: "/img/gallery/pixel-power.png",
+    title: "Pixel Power",
+    description: "we blend art and code to create visually stunning, unforgettable experiences.",
     cta: "Discover Games",
   },
 ]
