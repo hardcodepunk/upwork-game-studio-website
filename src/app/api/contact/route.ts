@@ -37,7 +37,10 @@ function isRateLimited(ip: string): boolean {
 
 // ─── Convert NextRequest to IncomingMessage ───────────
 function toIncomingMessage(req: NextRequest): IncomingMessage {
-  const readable = Readable.from(req.body as any)
+  if (!req.body) throw new Error("Request body is null")
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const readable = Readable.fromWeb(req.body as any)
   Object.assign(readable, {
     headers: Object.fromEntries(req.headers.entries()),
     method: req.method,
