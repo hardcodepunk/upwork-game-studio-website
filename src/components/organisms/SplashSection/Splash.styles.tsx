@@ -34,11 +34,11 @@ export const StyledImage = styled(Image)({
   position: "absolute",
   bottom: "10vh",
   right: "-25vw",
-  height: "500px",
+  height: "600px",
   width: "auto",
   [`@media (max-width:1100px)`]: {
-    right: "-40vw",
-    bottom: "15vh",
+    right: "-35vw",
+    bottom: "10vh",
   },
   [`@media (max-width:800px)`]: {
     height: "350px",
