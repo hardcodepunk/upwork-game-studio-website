@@ -104,6 +104,7 @@ const ContactSection = () => {
       setFeedback({ type: "success", message: "Message sent successfully!" })
       setForm({ name: "", email: "", message: "", website: "", cv: null })
       setSelectedFileName("")
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
       setFeedback({ type: "error", message: "Something went wrong. Please try again." })
     } finally {

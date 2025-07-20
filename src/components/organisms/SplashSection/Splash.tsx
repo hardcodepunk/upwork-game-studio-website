@@ -24,7 +24,7 @@ const SplashSection = () => {
         </Typography>
         <Box>
           <Typography variant="body1">
-            <Logo /> isn’t here to blend in. We’re redefining the online slots game, one mechanic at a time. Players
+            <Logo /> isn’t here to blend in. We’re redefining the online game scene, one mechanic at a time. Players
             first. Innovation always. And giveaways that slap.
           </Typography>
           <ButtonCustom

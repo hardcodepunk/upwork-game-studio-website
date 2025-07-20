@@ -22,7 +22,7 @@ const AboutSection = () => {
       <TextBlock>
         <StyledFeaturesWrapper>
           <Typography variant="h4">
-            COMING SOON <ColoredElement color={"theme.palette.secondary.main"} content={"—"} /> THE FUTURE OF SLOTS
+            COMING SOON <ColoredElement color={"theme.palette.secondary.main"} content={"—"} /> THE FUTURE OF GAMES
             AWAITS
           </Typography>
           <StyledFeaturesGrid>
