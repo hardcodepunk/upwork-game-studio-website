@@ -1,5 +1,5 @@
 // Styles
-import { SectionWrapper, TextBlock, StyledImage } from "./CommunitySection.styles"
+import { SectionWrapper, TextBlock } from "./CommunitySection.styles"
 
 // MUI
 import { Box, Typography } from "@mui/material"
@@ -35,7 +35,7 @@ const CommunitySection = () => {
           />
         </Box>
       </TextBlock>
-      <StyledImage src="/img/community.svg" alt="Community illustration" width={314} height={314} />
+      {/* <StyledImage src="/img/community.svg" alt="Community illustration" width={314} height={314} /> */}
     </SectionWrapper>
   )
 }

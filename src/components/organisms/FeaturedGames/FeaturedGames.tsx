@@ -71,9 +71,9 @@ const FeaturedGames = () => {
         onMouseUp={onMouseUp}
         onMouseLeave={onMouseUp}
       >
-        <GameCard title="Mutanix" backgroundImage="/img/gallery/mutanix.png" />
-        <GameCard title="The Heist" backgroundImage="/img/gallery/the-heist.png" />
-        <GameCard title="Chemorg" backgroundImage="/img/gallery/chemorg.png" />
+        <GameCard title="Mutanix" backgroundImage="/img/gallery/mutanix.png" comingSoon />
+        <GameCard title="The Heist" backgroundImage="/img/gallery/the-heist.png" comingSoon />
+        <GameCard title="Chemorg" backgroundImage="/img/gallery/chemorg.png" comingSoon />
       </StyledScroll>
     </StyledWrapper>
   )
