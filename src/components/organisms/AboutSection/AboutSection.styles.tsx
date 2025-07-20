@@ -9,6 +9,9 @@ export const SectionWrapper = styled(Box)(() => ({
   width: "100%",
   position: "relative",
   height: "80vh",
+  button: {
+    alignSelf: "flex-end",
+  },
   "@media (max-width:950px)": {
     height: "auto",
     padding: "0 0 100px",
@@ -42,10 +45,9 @@ export const StyledFeaturesGrid = styled("ul")(() => ({
 
 export const StyledImage = styled(Image)(() => ({
   position: "absolute",
-  width: "90%",
+  width: "60%",
   height: "auto",
   bottom: 0,
-  [`@media (max-width:950px)`]: {
-    transform: "scaleX(-1)",
-  },
+  transform: "scaleX(-1)",
+  [`@media (max-width:950px)`]: {},
 }))
