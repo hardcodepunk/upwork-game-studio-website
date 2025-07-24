@@ -49,9 +49,9 @@ export const StyledCardContent = styled("div")({
 })
 
 export const StyledCardTitle = styled("span")<{ active?: boolean }>(({ theme, active }) => ({
-  fontFamily: "var(--font-protest), Arial, sans-serif",
+  fontFamily: "var(--font-bebas), Arial, sans-serif",
   fontWeight: 800,
-  fontSize: "16px",
+  fontSize: "20px",
   textTransform: "uppercase",
   color: active ? theme.palette.secondary.main : "#fff",
 }))
@@ -61,5 +61,5 @@ export const StyledComingSoon = styled("span")(() => ({
   fontWeight: 600,
   alignSelf: "flex-start",
   marginTop: "auto",
-  fontFamily: "var(--font-protest), Arial, sans-serif",
+  fontFamily: "var(--font-bebas), Arial, sans-serif",
 }))

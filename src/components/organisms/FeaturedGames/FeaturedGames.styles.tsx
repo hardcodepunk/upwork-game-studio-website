@@ -11,7 +11,7 @@ export const StyledWrapper = styled("section")({
 })
 
 export const StyledHeader = styled("div")(({ theme }) => ({
-  fontFamily: "var(--font-protest), Arial, sans-serif",
+  fontFamily: "var(--font-bebas), Arial, sans-serif",
   fontSize: "24px",
   fontWeight: "normal",
   textTransform: "uppercase",
