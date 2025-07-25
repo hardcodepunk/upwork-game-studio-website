@@ -14,7 +14,7 @@ export const SectionWrapper = styled(Box)(() => ({
   },
   "@media (max-width:950px)": {
     height: "auto",
-    padding: "0 0 100px",
+    padding: "0 0 250px",
     button: {
       alignSelf: "flex-start",
     },
@@ -55,5 +55,6 @@ export const StyledImage = styled(Image)(() => ({
   [`@media (max-width:950px)`]: {
     transform: "scaleX(1)",
     right: 0,
+    width: "100%",
   },
 }))
