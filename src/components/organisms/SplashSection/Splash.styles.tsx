@@ -34,7 +34,7 @@ export const StyledImage = styled(Image)({
   position: "absolute",
   bottom: "10vh",
   right: "-25vw",
-  height: "600px",
+  height: "540px",
   width: "auto",
   [`@media (max-width:1100px)`]: {
     right: "-35vw",

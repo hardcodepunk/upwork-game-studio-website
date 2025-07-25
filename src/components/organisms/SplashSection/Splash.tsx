@@ -36,7 +36,7 @@ const SplashSection = () => {
           />
         </Box>
       </TextBlock>
-      <StyledImage src="/img/figure.png" alt="Illustration of a game character." width={600} height={800} />
+      <StyledImage src="/img/figure.png" alt="Illustration of a game character." width={600} height={540} />
     </SectionWrapper>
   )
 }
