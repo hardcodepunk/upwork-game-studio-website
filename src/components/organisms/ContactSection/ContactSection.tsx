@@ -92,7 +92,13 @@ const ContactSection = () => {
     data.append("name", form.name)
     data.append("email", form.email)
     data.append("message", form.message)
-    if (!form.cv) data.append("cv", new File([], ""))
+    if (form.cv) {
+      data.append("cv", form.cv)
+    }
+
+    for (const pair of data.entries()) {
+      console.log(pair[0], pair[1])
+    }
 
     try {
       const res = await fetch("/api/contact", {
