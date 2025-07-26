@@ -96,10 +96,6 @@ const ContactSection = () => {
       data.append("cv", form.cv)
     }
 
-    for (const pair of data.entries()) {
-      console.log(pair[0], pair[1])
-    }
-
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -160,6 +156,21 @@ const ContactSection = () => {
 
         <input type="text" name="website" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
 
+        {feedback && (
+          <Typography
+            sx={{
+              color: feedback.type === "success" ? "#4caf50" : "#f44336",
+              fontSize: "20px",
+              fontWeight: 700,
+              letterSpacing: "0.5px",
+              marginTop: "1rem",
+              fontFamily: "var(--font-protest), Arial, sans-serif",
+            }}
+          >
+            {feedback.message}
+          </Typography>
+        )}
+
         <StyledButtonWrapper>
           <StyledFileInputWrapper>
             <HiddenFileInput id="cv-upload" type="file" accept="application/pdf" onChange={handleFileChange} />
@@ -172,18 +183,6 @@ const ContactSection = () => {
             {isSubmitting ? "Sending..." : "Submit"}
           </StyledButton>
         </StyledButtonWrapper>
-
-        {feedback && (
-          <Typography
-            sx={{
-              color: feedback.type === "success" ? "green" : "#f44336",
-              fontSize: "14px",
-              marginTop: "0.5rem",
-            }}
-          >
-            {feedback.message}
-          </Typography>
-        )}
       </StyledForm>
     </StyledContactWrapper>
   )
