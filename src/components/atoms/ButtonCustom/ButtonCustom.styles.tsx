@@ -5,7 +5,7 @@ export const StyledButton = styled(Button)(({ theme }) => ({
   alignItems: "center",
   gap: "0.5rem",
   padding: "0.75rem 1.5rem",
-  backgroundColor: "transparent",
+  backgroundColor: "#141414",
   color: "white",
   fontWeight: 700,
   textTransform: "uppercase",
@@ -15,10 +15,18 @@ export const StyledButton = styled(Button)(({ theme }) => ({
   margin: "40px 0 20px",
   display: "inline-flex",
   alignSelf: "flex-start",
-  background: "#141414",
+
   ":hover": {
     border: `4px solid ${theme.palette.secondary.main}`,
   },
+
+  "&.Mui-disabled": {
+    backgroundColor: "#141414",
+    color: "white",
+    opacity: 0.6,
+    cursor: "not-allowed",
+  },
+
   "@media (max-width:950px)": {
     gap: "0.25rem",
     padding: "0.25rem 0.75rem",

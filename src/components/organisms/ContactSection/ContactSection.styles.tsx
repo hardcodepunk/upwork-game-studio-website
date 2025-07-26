@@ -48,6 +48,12 @@ export const StyledInput = styled(TextField)(() => ({
       borderColor: "#aaa",
     },
   },
+
+  "& input:-webkit-autofill": {
+    WebkitBoxShadow: "0 0 0 1000px #141414 inset",
+    WebkitTextFillColor: "#fff",
+    transition: "background-color 5000s ease-in-out 0s",
+  },
 }))
 
 export const StyledTextArea = styled(StyledInput)({
